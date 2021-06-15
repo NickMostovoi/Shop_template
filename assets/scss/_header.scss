@@ -11,6 +11,22 @@
           color: $color-light;
         }
       }
+
+      .dropdown-menu {
+        margin-top: 1px;
+
+        border: none;
+        border-radius: 0;
+        background-color: $color-dark;
+
+        a {
+          color: $color-light;
+
+          &:hover {
+            color: $color-dark;
+          }
+        }
+      }
     }
   }
 
@@ -50,5 +66,51 @@
         flex-grow: 2;
       }
     }
+
+    button {
+      margin: 5px;
+      padding: 0;
+
+      color: $color-light;
+      border-color: $color-dark;
+      background-color: $color-dark;
+
+      &:hover {
+        color: $color-dark;
+        background-color: $color-light;
+      }
+    }
+
+    i {
+      display: block;
+
+      padding: 10px;
+    }
+  }
+}
+
+.page-header {
+  &__cart-btn {
+    position: relative;
+
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+
+    color: $color-dark;
+    border: none;
+    border-radius: 0;
+    background-color: $color-light;
+
+    &:hover {
+      span {
+        color: $color-dark;
+        background-color: $color-light;
+      }
+    }
+  }
+
+  &__cart-counter {
+    display: none;
   }
 }
