@@ -1,0 +1,14 @@
+.navbar {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  white-space: nowrap;
+
+  color: $color-dark;
+
+  font-size: 1.2rem;
+}
