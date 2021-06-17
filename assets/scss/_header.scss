@@ -102,11 +102,31 @@
     border-radius: 0;
     background-color: $color-light;
 
+    @media (max-width: 991px) {
+      margin-top: -12px !important;
+    }
+
     &:hover {
       span {
         color: $color-dark;
         background-color: $color-light;
       }
+    }
+
+    span {
+      position: absolute;
+      top: -12px;
+      left: -12px;
+
+      width: 24px;
+      height: 24px;
+
+      transition: background-color 0.5s;
+
+      color: $color-light;
+      border-radius: 12px;
+      background-color: $color-dark;
+      box-shadow: 0 0 5px rgba(#000000, 0.75);
     }
   }
 
@@ -115,3 +135,6 @@
   }
 }
 
+.fa-shopping-cart {
+  font-size: 1.5rem;
+}
