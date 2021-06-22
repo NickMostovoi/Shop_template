@@ -173,20 +173,6 @@
       transition: background-color 0.5s;
 
       background-color: rgba($color-light, 0.2);
-
-      &.disabled,
-      &:disabled,
-      &.active,
-      &:active {
-        opacity: 1;
-        color: $color-light !important;
-        border-color: $color-light !important;
-        background-color: rgba($color-light, 0.1) !important;
-      }
-
-      &:focus {
-        box-shadow: none !important;
-      }
     }
   }
 }
